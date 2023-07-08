@@ -23,7 +23,6 @@
     "web-vitals": "^2.1.4"
   },
   
-  "type": "module",
   "scripts": {
     "start-app": "node src/index.js",
     "start": "npm run start-app && cd Server && npm run dev",

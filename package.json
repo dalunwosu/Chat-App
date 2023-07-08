@@ -23,9 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start-server": "cd Server && npm run dev",
-    "start-react": "react-scripts start",
-    "start": "concurrently --kill-others \"npm run start-react\" \"npm run start-server\"",
+    "start-app": "node index.js && sleep 5 && cd Server && npm run dev",
+    "start": "npm run start-app",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

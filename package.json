@@ -22,10 +22,10 @@
     "socket.io-client": "^4.7.1",
     "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
-    "start-app": "node src/index.js",
-    "start": "npm run start-app && cd Server && npm run dev",
+    "start-server": "cd Server && wait-on http://localhost:3000 && npm run dev",
+    "start-react": "react-scripts start",
+    "start": "concurrently --kill-others \"npm run start-react\" \"npm run start-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "wait-on": "^7.0.1"
   }
 }

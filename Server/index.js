@@ -1,4 +1,4 @@
-import App from '../src/App';
+
 require('dotenv').config();
 const express = require('express');
 const app = express();
@@ -14,9 +14,6 @@ app.use(cors());
 
 const server = http.createServer(app);
 
-app.get('/', (req, res) => {
-  res.send(App);
-});
 
 const io = new Server(server, {
   cors: {

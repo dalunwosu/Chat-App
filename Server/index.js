@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express');
-const path = require('path');
 const app = express();
 const http = require('http');
 const cors = require('cors');
@@ -12,8 +11,6 @@ const leaveRoom = require('./Leave-Room/leave-room');
 
 
 app.use(cors()); 
-
-app.use(express.static(path.join(__dirname, 'src')));
 
 const server = http.createServer(app);
 
@@ -101,8 +98,5 @@ io.on('connection', (socket) => {
   });
 });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src', 'index.js'));
-});
 
 server.listen(4000, () => 'Server is running on port 4000');

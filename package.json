@@ -23,6 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    
     "start-server": "cd Server && npm run dev",
     "start-react": "react-scripts start",
     "start": "concurrently \"npm run start-server\" \"npm run start-react\"",
@@ -50,7 +51,6 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
-    "nodemon": "^2.0.22",
-    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
+    "nodemon": "^2.0.22"
   }
 }

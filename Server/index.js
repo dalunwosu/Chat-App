@@ -10,6 +10,10 @@ const harperGetMessages = require('./db-functions/db-get-messages');
 const leaveRoom = require('./Leave-Room/leave-room');
 
 
+app.get('/', (req, res) => {
+  res.send('Hello, this is the chat app!');
+});
+
 app.use(cors()); 
 
 const server = http.createServer(app);

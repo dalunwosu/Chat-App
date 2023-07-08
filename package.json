@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
   }
 }

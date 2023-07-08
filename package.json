@@ -25,7 +25,7 @@
   "scripts": {
     "start": "concurrently \"npm run start-server\" \"npm run start-react\"",
     "start-server": "cd Server && node index.js",
-    "start-react": "react-scripts start",
+    "start-react": " wait-on http://localhost:4000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

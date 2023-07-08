@@ -25,7 +25,7 @@
   "scripts": {
     "start": "concurrently \"npm run chat-app\" \"npm run server\"",
     "chat-app": "npm start",
-    "server": "cd server && npm run dev",
+    "server": "cd Server && npm run dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

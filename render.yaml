@@ -1,8 +1,0 @@
-services:
-  - name: chat-app
-    region: EU Central
-    github:
-      repo: 
-      branch: main
-    buildCommand: npm i && cd Server && npm i 
-    startCommand: npm start

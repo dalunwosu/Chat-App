@@ -1,0 +1,39 @@
+.messagesColumn {
+    height: 85vh;
+    overflow: auto;
+    padding: 10px 10px 10px 40px;
+  }
+  .message {
+    background:#7fd3ff;
+    border:1px solid #EEEEEE;
+    border-radius: 25px;
+    margin-bottom: 24px;
+    max-width: 600px;
+    padding: 12px;
+  }
+  .msgMeta {
+    color: rgb(63, 73, 204);
+    font-size: medium;
+  }
+  .msgText {
+    color: #EEEEEE;
+    font-size: larger;
+  }
+  
+  .sentMessage{
+    background:#CCCCCC !important; 
+    border:1px solid #EEEEEE;
+    border-radius: 25px;
+    margin-bottom: 24px;
+    max-width: 600px;
+    padding: 12px;
+  }
+
+  .receivedMessage{
+    background:#7fd3ff !important;
+    border:1px solid #EEEEEE;
+    border-radius: 25px;
+    margin-bottom: 24px;
+    max-width: 600px;
+    padding: 12px;
+  }

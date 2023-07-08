@@ -98,5 +98,5 @@ io.on('connection', (socket) => {
   });
 });
 
-
-server.listen(process.env.PORT, () => 'Server is running on port 4000');
+app.listen(4001)
+server.listen(4000, () => 'Server is running on port 4000');

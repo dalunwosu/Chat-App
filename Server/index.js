@@ -105,4 +105,6 @@ app.get('/', (req, res) => {
 });
 
 
-server.listen(4000, () => 'Server is running on port 4000');
+server.listen(process.env.DB_PORT, () => 'Server is running on port 4000');
+
+console.log(process.env.DB_PORT)

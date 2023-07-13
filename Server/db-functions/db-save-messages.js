@@ -1,4 +1,5 @@
 let axios = require('axios');
+require('dotenv').config();
 
 function dbSaveMessage(message, username, room) {
   const dbUrl = process.env.DB_URL;

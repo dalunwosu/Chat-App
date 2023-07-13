@@ -1,4 +1,6 @@
 let axios = require('axios');
+require('dotenv').config();
+
 function dbGetMessages(room) {
   const dbUrl = process.env.DB_URL;
   const dbPw = process.env.DB_PW;

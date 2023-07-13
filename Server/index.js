@@ -14,7 +14,7 @@ const leaveRoom = require('./Leave-Room/leave-room');
 app.use(cors()); 
 
 const server = http.createServer(app);
-app.use(express.static('build'));
+app.use(express.static('../build'));
 
 const io = new Server(server, {
   cors: {

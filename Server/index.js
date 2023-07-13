@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const cors = require('cors');
+const path = require('path');
 const { Server } = require('socket.io');
 const harperSaveMessage = require('./db-functions/db-save-messages');
 const harperGetMessages = require('./db-functions/db-get-messages');
@@ -13,6 +14,7 @@ const leaveRoom = require('./Leave-Room/leave-room');
 app.use(cors()); 
 
 const server = http.createServer(app);
+app.use(express.static('build'));
 
 const io = new Server(server, {
   cors: {
@@ -96,6 +98,10 @@ io.on('connection', (socket) => {
       });
     }
   });
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 

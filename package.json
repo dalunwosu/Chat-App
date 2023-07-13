@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run start-server\" \"npm run start-react\"",
-    "start-server": "cd Server && npm run dev",
+    "start-server": "cd Server && wait-on http://localhost:3000 &&npm run dev",
     "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
